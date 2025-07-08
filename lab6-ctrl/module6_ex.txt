@@ -1,0 +1,17 @@
+Module Review
+
+1. If more than one case item expression matches the case expression, which associated statement(s) execute?
+    The case expression is compared to the case item expressions in the order they appear and the statement associated with only the first match is executed.
+
+2. Can you use the case, if and for statements in continuous assignments?
+    The case, if and for statements are procedural statements that cannot appear in a continuous assignment.
+
+Module Exercise 1
+
+    always@(ctrl, a, b, c, f)
+        if(f < 4'b0110)
+            d = a&b;
+        else if (ctrl)
+            d = 1'b0;
+        else
+            d = c;
