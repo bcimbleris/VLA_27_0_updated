@@ -1,0 +1,4 @@
+Code this two-input AND operation using a: (i) wire (ii) reg.
+    i) wire y = a & b;
+    ii) reg y;
+        always@* y= a & b;
