@@ -1,0 +1,9 @@
+1. How wide is the result of a logical && operation?
+    1 bit
+2. Explain the difference between the && and & operators.
+    The && is a logical operator that reduces each operand to a single bit and then ANDs every bit. The & is a bitwise operator that does a bit-by-bit AND of its operands.
+3. TRUE or FALSE: You must explicitly size literals in a concatenation.
+    True, so everything goes is the right place
+4. Given the statement regx = 4'b0101; what is the value of:
+bus = { 2 {regx[3:1], {3{1'b0,regx[0]}}} };
+            010_01_01_01_010_01_01_01
