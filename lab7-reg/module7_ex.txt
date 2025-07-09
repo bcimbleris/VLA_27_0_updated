@@ -1,0 +1,20 @@
+Module Review
+1. What is the primary difference between blocking and nonblocking assignments?
+▪ The blocking assignment operator blocks execution of subsequent statements until the assignment completes.
+▪ The nonblocking assignment operator calculates the RHS expression and schedules an update to the LHS variable.
+2. Where should you use blocking assignments?
+▪ Use blocking assignments primarily in procedures that represent purely combinational logic.
+3. Where should you use nonblocking assignments?
+▪ Use nonblocking assignments for variables that represent storage, primarily in a procedure that represents sequential logic.
+4. Where can you legitimately mix blocking and nonblocking assignments?
+▪ You can make blocking assignments to intermediate (temporary) variables in a sequential procedure
+
+Module Exercise
+
+    always@(posedge clk)
+    
+        rg <= sel ? c : b;
+
+    always@(posedge clk)
+
+        op <= sel ? c : a & rg;
