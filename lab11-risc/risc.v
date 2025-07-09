@@ -74,7 +74,7 @@ module risc
 
 
   /////////////////////
-  // ADDESS SELECTOR //
+  // ADDRESS SELECTOR //
   /////////////////////
 
   wire [AWIDTH-1:0] addr ;
